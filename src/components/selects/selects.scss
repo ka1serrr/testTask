@@ -1,0 +1,47 @@
+.selects {
+    margin-top: 74px;
+
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__wrap-left {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__btn {
+        margin-left: 120px;
+        margin-top: 27px;
+        position: relative;
+        
+        font-family: 'Formular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: right;
+        color: #A3A6A9;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            background-color: #A3A6A9;
+            width: 16px;
+            height: 2px;
+            right: -24px;
+            top: 50%;
+        }
+
+        &::before {
+            transform: rotate(45deg)
+        }
+        &::after {
+            transform: rotate(-45deg)
+        }
+
+    }
+}

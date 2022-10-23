@@ -1,0 +1,19 @@
+.input {
+    font-family: 'Rubik-Regular';
+
+    border-bottom: 1px solid black;
+    display: block;
+    width: 438px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+
+    &::placeholder {
+        font-family: 'Rubik-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        color: #A3A6A9;
+    }
+}
+.input_long {
+    width: 466px;
+}
