@@ -1,7 +1,7 @@
 import cn from "classnames";
 import React from "react";
 import './select.scss'
-const Select = ({isActive, handleClickOnSelect, selectsContentSubtitle, setIsActive, setSelectsContentSubtitle }) => {
+const Select = ({isActive, handleClickOnSelect, selectsContentSubtitle, setIsActive, setSelectsContentSubtitle}) => {
 
 
 	const changeContentSubtitle = (e) => {
@@ -24,7 +24,7 @@ const Select = ({isActive, handleClickOnSelect, selectsContentSubtitle, setIsAct
 					<input onClick={changeContentSubtitle} className='select__input' value='Full time' name='form' id='fullTime' type="radio"  />
 					<label className='select__label' htmlFor="fullTime">Full time</label>
 
-					<input onClick={changeContentSubtitle} className='select__input' value='Half time' name='form' id='halfTime' type="radio"  />
+					<input  onClick={changeContentSubtitle} className='select__input' value='Half time' name='form' id='halfTime' type="radio"  />
 					<label className='select__label' htmlFor="halfTime">Half time</label>
 
 					<input onClick={changeContentSubtitle} className='select__input' value='Part time' name='form' id='partTime' type="radio" />

@@ -1,6 +1,138 @@
 .card {
     width: 100%;
     max-width: 1196px;
+    height: auto;
     background: #FFFFFF;
     border: 1px solid #000000;
+    padding: 20px;
+
+    &_active {
+        min-height: auto;
+    }
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__wrap-left {
+        flex-basis: 446px;
+    }
+
+    &__img {
+        width: 446px;
+        height: 126px;
+    }
+
+    &__info {
+        margin-top: 26px;
+    }
+
+    &__list-item {
+        margin-top: 17px;
+        font-family: "Rubik-Regular";
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #545454;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__wrap-right {
+        flex-grow: 3;
+
+        max-width: 700px
+    }
+
+    &__title {
+        font-family: 'Roboto-Regular';
+        font-weight: 400;
+        font-size: 32px;
+        color: #000000;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-family: 'Roboto-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    &__snapshot-title {
+        margin-top: 16px;
+        font-family: 'Roboto-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000;
+        margin-bottom: 8px;
+
+    }
+
+    &__snapshots {
+        overflow: hidden;
+        height: 120px;
+        position: relative;
+        &_active {
+            height: auto;
+        }
+    }
+
+    &__snapshots-list {
+        padding-left: 12px;
+    }
+
+    &__snapshots-list-item {
+        font-family: 'Roboto-Regular';
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        margin-top: 17px;
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: #000000;
+            top: 8px;
+            left: -12px;
+        }
+    }
+
+    &__more {
+        margin: 10px auto 0;
+        display: block;
+        font-family: 'Roboto-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #A3A6A9;
+    }
+
+    &__gradient {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) -59.32%, #FFFFFF 42.84%);
+        width: 100%;
+        max-width: 677px;
+        height: 16px;
+        position: absolute;
+        top: 608px;
+
+        &_inactive {
+            display: none;
+        }
+    }
 }
