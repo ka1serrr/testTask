@@ -5,9 +5,7 @@ body {
     font-family: 'Roboto-Regular', serif;
 }
 .app {
-    padding-top: 81px;
-    //margin: 0 auto;
-    //width: 1196px;
+    padding: 81px 24px 20px;
 }
 
 .title {
@@ -16,4 +14,13 @@ body {
     font-weight: 400;
     font-size: 64px;
     color: #000000;
+}
+
+@media (max-width: 560px) {
+    .title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
 }

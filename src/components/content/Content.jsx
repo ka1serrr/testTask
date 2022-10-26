@@ -10,10 +10,12 @@ const Content = () => {
 			<div className="container">
 				{data.map(item => (
 					<Card
-						title={item.title}
-
+						{...item}
+						key={item.id}
 					/>
 				))}
+
+
 			</div>
 		</div>
 	);

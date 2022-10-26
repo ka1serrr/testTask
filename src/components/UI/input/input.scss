@@ -17,3 +17,14 @@
 .input_long {
     width: 466px;
 }
+
+@media (max-width: 1017px) {
+    .input__container {
+        margin-top: 16px;
+    }
+}
+@media (max-width: 560px) {
+    .input_long {
+        width: 272px;
+    }
+}

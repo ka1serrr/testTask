@@ -1,6 +1,8 @@
 .card {
+    margin-top: 24px;
     width: 100%;
     max-width: 1196px;
+    min-width: 272px;
     height: auto;
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -14,16 +16,22 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
     }
 
     &__wrap-left {
-        flex-basis: 446px;
+        flex-grow: 1;
     }
 
     &__img {
-        width: 446px;
-        height: 126px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 446px;
+        min-height: 126px;
+
+        img {
+                width: 100px;
+        }
     }
 
     &__info {
@@ -57,12 +65,12 @@
         font-weight: 400;
         font-size: 32px;
         color: #000000;
+        line-height: 160%;
     }
-    &__descr {
+    &__salary {
         margin-top: 10px;
         font-family: 'Roboto-Regular';
-        font-weight: 400;
-        font-size: 16px;
+        font-size: 20px;
         color: #000000;
     }
 
@@ -81,7 +89,9 @@
         overflow: hidden;
         height: 120px;
         position: relative;
+
         &_active {
+            min-height: 120px;
             height: auto;
         }
     }
@@ -114,25 +124,42 @@
     }
 
     &__more {
-        margin: 10px auto 0;
+        margin: 11px auto 0;
         display: block;
         font-family: 'Roboto-Regular';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         color: #A3A6A9;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
-    &__gradient {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) -59.32%, #FFFFFF 42.84%);
-        width: 100%;
-        max-width: 677px;
-        height: 16px;
-        position: absolute;
-        top: 608px;
+}
 
-        &_inactive {
-            display: none;
+@media (max-width: 1128px) {
+    .card__wrap {
+        flex-direction: column;
+        align-items: center;
+
+        &-right {
+            margin-top: 16px;
+        }
+    }
+}
+@media (max-width: 560px) {
+    .card {
+        min-width: 272px;
+        width: 100%;
+        margin: 24px auto 0;
+
+        &__title {
+            font-size: 22px;
+        }
+        &__salary {
+            font-size: 18px;
         }
     }
 }

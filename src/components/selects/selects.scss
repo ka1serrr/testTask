@@ -19,7 +19,6 @@
     }
 
     &__btn {
-        //margin-left: 120px;
         margin-top: 27px;
         position: relative;
         
@@ -48,4 +47,24 @@
         }
 
     }
+}
+@media (max-width: 560px) {
+    .selects {
+        margin-top: 32px;
+
+        &__wrap {
+            display: block;
+            width: 272px;
+            margin: 0 auto;
+        }
+
+        &__btn {
+            margin-top: 19px;
+        }
+
+        &__wrap-left {
+            width: 272px;
+        }
+    }
+
 }

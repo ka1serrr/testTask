@@ -1,0 +1,14 @@
+.error {
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+    .error {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -85,3 +85,15 @@
         }
     }
 }
+
+@media (max-width: 560px) {
+    .select {
+        width: 272px;
+    }
+    .select__subtitle {
+        width: 272px;
+    }
+    .select__content {
+        width: 272px;
+    }
+}

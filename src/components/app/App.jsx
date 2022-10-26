@@ -1,21 +1,22 @@
 import './App.scss';
 import Selects from "../selects/Selects";
 import Content from "../content/Content";
-import {useContext} from "react";
-import {DataContext} from "../../provider/DataProvider";
+import {ErrorBoundary} from "react-error-boundary";
+import ErrorFallback from "../errorFallback/ErrorFallback";
 
 function App() {
 
-    const {data} = useContext(DataContext)
-
-    console.log(data)
     return (
           <div className="app">
               <div className="container">
                   <h1 className="title">List of vacancies</h1>
               </div>
               <Selects/>
-              <Content/>
+              <ErrorBoundary
+                  FallbackComponent={ErrorFallback}
+              >
+                  <Content/>
+              </ErrorBoundary>
           </div>
   )
 }
