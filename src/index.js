@@ -6,11 +6,9 @@ import {DataProvider} from "./provider/DataProvider";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
       <DataProvider>
           <App />
       </DataProvider>
-
 );
 
 

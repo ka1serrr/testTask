@@ -1,0 +1,13 @@
+.loader {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 560px) {
+   .loader {
+       width: 50px;
+       height: 50px;
+   }
+}

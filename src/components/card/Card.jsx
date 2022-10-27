@@ -58,6 +58,10 @@ const Card = ({title, form, companyImg, address, company, web, responsibility, r
 								{!requirement ? null :
 									<li className="card__snapshots-list-item">{requirement}</li>
 								}
+								<li className="card__snapshots-list-item">{responsibility}</li>
+								{!requirement ? null :
+									<li className="card__snapshots-list-item">{requirement}</li>
+								}
 							</ul>
 						</div>
 						{ulHeight <= 120 ? null :

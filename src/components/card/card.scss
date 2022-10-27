@@ -8,10 +8,11 @@
     border: 1px solid #000000;
     padding: 20px;
 
-    &_active {
-        min-height: auto;
-    }
+    transition: all 0.2s ease-in-out;
 
+    &_active {
+        max-height: max-content;
+    }
 
     &__wrap {
         display: flex;
@@ -40,7 +41,7 @@
 
     &__list-item {
         margin-top: 17px;
-        font-family: "Rubik-Regular";
+        font-family: 'Rubik-Regular', serif;
 
         span {
             font-weight: 400;
@@ -61,7 +62,7 @@
     }
 
     &__title {
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular', serif;
         font-weight: 400;
         font-size: 32px;
         color: #000000;
@@ -69,14 +70,14 @@
     }
     &__salary {
         margin-top: 10px;
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular', serif;
         font-size: 20px;
         color: #000000;
     }
 
     &__snapshot-title {
         margin-top: 16px;
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular', serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
@@ -90,6 +91,8 @@
         height: 120px;
         position: relative;
 
+        transition: all 0.2s ease-in-out;
+
         &_active {
             min-height: 120px;
             height: auto;
@@ -101,7 +104,7 @@
     }
 
     &__snapshots-list-item {
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular', serif;
         position: relative;
         font-weight: 400;
         font-size: 16px;
@@ -126,7 +129,7 @@
     &__more {
         margin: 11px auto 0;
         display: block;
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;

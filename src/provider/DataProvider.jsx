@@ -23,6 +23,7 @@ export const DataProvider = ({children}) => {
 			.then(onLoadedData)
 	}
 
+
 	const onItemsListLoading = () => {
 		setNewItemLoading(true);
 	}
@@ -43,7 +44,7 @@ export const DataProvider = ({children}) => {
 
 
 	return (
-		<DataContext.Provider value={{...value, loading, onRequest, vacanciesEnded, newItemLoading}}>
+		<DataContext.Provider value={{...value, loading, onRequest, vacanciesEnded, newItemLoading, page}}>
 			{children}
 		</DataContext.Provider>
 	);

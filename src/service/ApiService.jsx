@@ -19,17 +19,22 @@ export class GetData {
 	}
 
 	_transformData = (data) => {
-		return {
-			title: data.name,
-			address: data.area?.name,
-			company: data.employer.name,
-			companyImg: data?.employer?.logo_urls?.original,
-			web: data.alternate_url,
-			form: data.schedule?.name,
-			salaryStart: data.salary?.from,
-			id: data.id,
-			responsibility: data.snippet?.responsibility,
-			requirement: data.snippet?.requirement
+		try {
+			return {
+				title: data.name,
+				address: data.area?.name,
+				company: data.employer.name,
+				companyImg: data?.employer?.logo_urls?.original,
+				web: data.alternate_url,
+				form: data.schedule?.name,
+				salaryStart: data.salary?.from,
+				id: data.id,
+				responsibility: data.snippet?.responsibility,
+				requirement: data.snippet?.requirement
+			}
+		} catch (error) {
+
 		}
+
 	}
 }
