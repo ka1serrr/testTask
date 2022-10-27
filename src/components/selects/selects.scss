@@ -22,17 +22,19 @@
         margin-top: 27px;
         position: relative;
         
-        font-family: 'Formular';
+        font-family: 'Formular', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         text-align: right;
-        color: #A3A6A9;
+        color: #000000;
+
+        transition: opacity 0.2s ease-in-out;
 
         &::before, &::after {
             content: '';
             position: absolute;
-            background-color: #A3A6A9;
+            background-color: #000000;
             width: 16px;
             height: 2px;
             right: -24px;
@@ -44,6 +46,10 @@
         }
         &::after {
             transform: rotate(-45deg)
+        }
+
+        &:hover {
+            opacity: 0.8;
         }
 
     }

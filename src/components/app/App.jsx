@@ -3,6 +3,7 @@ import Selects from "../selects/Selects";
 import Content from "../content/Content";
 import {ErrorBoundary} from "react-error-boundary";
 import ErrorFallback from "../errorFallback/ErrorFallback";
+import Footer from "../footer/Footer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
               >
                   <Content/>
               </ErrorBoundary>
+              <Footer/>
           </div>
   )
 }
